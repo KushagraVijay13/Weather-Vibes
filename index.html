@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Weather Vibes - Your Personal Weather Companion</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="weather-background" id="weatherBackground"></div>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-cloud-sun"></i> Weather Vibes</h1>
+            <p>Your Personal Weather Companion</p>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="locationBtn" title="Use current location"><i class="fas fa-location-arrow"></i></button>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Getting weather data...</p>
+        </div>
+
+        <!-- Weather Display -->
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-main">
+                <div class="weather-info">
+                    <h2 id="cityName">City Name</h2>
+                    <div class="temperature">
+                        <span id="temp">--</span>°C
+                    </div>
+                    <div class="weather-desc">
+                        <img id="weatherIcon" src="" alt="Weather Icon">
+                        <span id="description">--</span>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-eye"></i>
+                        <span>Feels like</span>
+                        <span id="feelsLike">--°C</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span>Humidity</span>
+                        <span id="humidity">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span>Wind</span>
+                        <span id="windSpeed">-- km/h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="forecast-section" id="forecastSection">
+            <div class="forecast-card">
+                <h3><i class="fas fa-calendar-alt"></i> 5-Day Weather Forecast</h3>
+                <div class="forecast-grid" id="forecastGrid">
+                    <!-- Forecast will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations" id="recommendations">
+            <!-- Song Recommendations -->
+            <div class="recommendation-card">
+                <h3><i class="fas fa-music"></i> Songs for this Weather</h3>
+                <div class="songs-grid" id="songsGrid">
+                    <!-- Songs will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Places Recommendations -->
+            <div class="recommendation-card">
+                <h3><i class="fas fa-map-marker-alt"></i> Places to Visit</h3>
+                <div class="places-grid" id="placesGrid">
+                    <!-- Places will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p><i class="fas fa-heart"></i> Designed by Aman & Kushagra</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
