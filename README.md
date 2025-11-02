@@ -91,7 +91,7 @@ Example format:
 ## 🤝 Contributing
 
 Feel free to fork the project, make improvements, and submit a pull request.
-
+Developed by - @kushagra928@gmail.com
 ---
 
 ## ⭐ Support
