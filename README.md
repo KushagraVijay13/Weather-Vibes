@@ -61,17 +61,6 @@ No server required ✨
 
 ---
 
-## 📸 Preview
-
-*(Add a screenshot here later — looks super professional)*
-
-Example format:
-
-```
-![App Preview](assets/preview.png)
-```
-
----
 
 ## 🌍 API Used
 
